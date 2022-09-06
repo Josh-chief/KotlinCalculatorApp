@@ -18,7 +18,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 
       fun allClearAction(view: View)
       {
-          workingsTV.text = ""
+
+          workingTV.text = ""
           resultsTV.text = ""
       }
       fun backSpaceAction(view: View)
@@ -32,9 +33,14 @@ import kotlinx.android.synthetic.main.activity_main.*
       fun numberAction(view: View)
       {
           if(view is Button){
-              workingsTV.append(view.text)
-              canAddOperation = true
+              if (canAddDecimal)
+                  workinsTV.append(view.text)
+              canAddOperation = false
           }
+          else
+              workinsTV.append(view.text)
+          canAddOperation = true
+
           }
 
       fun operationalAction(view: View)
