@@ -16,10 +16,10 @@ import kotlinx.android.synthetic.main.activity_main.*
         setContentView(R.layout.activity_main)
     }
 
+
       fun allClearAction(view: View)
       {
 
-          workingTV.text = ""
           resultsTV.text = ""
       }
       fun backSpaceAction(view: View)
@@ -38,7 +38,7 @@ import kotlinx.android.synthetic.main.activity_main.*
               canAddOperation = false
           }
           else
-              workinsTV.append(view.text)
+              workingTV.append(view.text)
           canAddOperation = true
 
           }
