@@ -14,6 +14,9 @@ import kotlinx.android.synthetic.main.activity_main.*
       private lateinit var workingsTV : TextView
       private lateinit var resultsTV : TextView
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
         //associate view objects with Ids of the TextView defined in Xml
         workingsTV = findViewById(R.id.workinsTV)
