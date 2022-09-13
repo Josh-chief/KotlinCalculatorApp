@@ -19,7 +19,7 @@ import kotlinx.android.synthetic.main.activity_main.*
         setContentView(R.layout.activity_main)
 
         //associate view objects with Ids of the TextView defined in Xml
-        workingsTV = findViewById(R.id.workinsTV)
+        workingsTV = findViewById(R.id.workingTV)
         resultsTV = findViewById(R.id.resultsTV)
 
     }
